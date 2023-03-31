@@ -1,0 +1,37 @@
+{
+  "name": "blog",
+  "version": "1.0.0",
+  "description": "learning Nodejs",
+  "main": "src/index.js",
+  "scripts": {
+    "beautiful": "lint-staged",
+    "watch": "node-sass --watch src/resources/scss --output src/public/css",
+    "start": "nodemon --inspect src/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "f8",
+    "blog",
+    "f8",
+    "nodejs",
+    "nodejs"
+  ],
+  "author": "Quy Nguyen",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2",
+    "express-handlebars": "^7.0.2",
+    "husky": "^8.0.3",
+    "lint-staged": "^13.2.0",
+    "prettier": "^2.8.7"
+  },
+
+  "lint-staged":{
+    "src/**/*.{js, json, scss}": "prettier --single-quote --trailing-comma all --write"
+  },
+  "devDependencies": {
+    "morgan": "^1.10.0",
+    "node-sass": "^8.0.0",
+    "nodemon": "^2.0.21"
+  }
+}
